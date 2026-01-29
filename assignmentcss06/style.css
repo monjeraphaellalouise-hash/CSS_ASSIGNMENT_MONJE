@@ -25,15 +25,27 @@ body {
     width: 100%;
     margin: auto;
     padding: 0 16px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+
+    display: flex;
     align-items: center;
+}
+
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
 }
 
 .header-left {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
 }
 
 .header-logo {
@@ -57,10 +69,7 @@ body {
     text-decoration: underline;
 }
 
-.header-center {
-    display: flex;
-    justify-content: center;
-}
+
 
 
 .search-box {
@@ -75,7 +84,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.55);
     border-radius: 10px;
 
-    margin-left: 24px;
+
 }
 
 .search-icon {
@@ -177,14 +186,17 @@ body {
     height: 64px;
     background-color: #2b2f33;
     border-radius: 16px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin: 0 auto 32px;
     color: #6f2cf3;
     font-size: 26px;
     font-weight: 600;
 }
+
 
 .install {
     text-align: center;
